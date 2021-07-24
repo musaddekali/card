@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Pages From This--Repo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #444;
+            background-color: #fff;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem 1rem;
+        }
+
+        .link a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #eee;
+            border-radius: .25rem;
+            text-decoration: none;
+            color: #fff;
+            background-color: dodgerblue;
+            transition: 0.3s;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+            background-color: rgb(22, 115, 207);
+        }
+
+        #link-count {
+            position: fixed;
+            top: 0;
+            left: 1rem;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  In this index.html you have to link all folder.(From this Repo.)
+First Upload folder with all file and then link this with current file with name -->
+    <div id="link-count"></div>
+    <section class="link">
+        <a target="_blank" href="./item-1/index.html">Business-card</a>
+        <a target="_blank" href="./item-2/index.html">Profile-card</a>
+        <a target="_blank" href="./item-3/index.html">Single-card</a>
+        <a target="_blank" href="./item-4/index.html">Three-cards-grid</a>
+        <a target="_blank" href="./item-5/index.html">Three-cards-flex</a>
+        <a target="_blank" href="./item-6/index.html">Blog-cards</a>
+    </section>
+
+    <script>
+
+        (function () {
+            // Count total links 
+            let link = document.querySelectorAll('a');
+            let show = document.querySelector('#link-count');
+            show.innerHTML = "Total Pages : " + link.length;
+        }());
+
+    </script>
+</body>
+
+</html>

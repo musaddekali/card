@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  background-color: #fff;
+}
+
+.profile {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to right, #1facb6 0%, #19a1ad 100%);
+  background-position: center;
+  background-size: cover;
+}
+
+.profile__cover-img {
+  width: 100%;
+  height: 100px;
+  background: url("img/porfile-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.profile__intro {
+  text-align: center;
+  margin-top: -35px;
+}
+.profile__img {
+  max-width: 70px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.profile__name {
+  margin-top: 8px;
+}
+.profile__location {
+  font-size: 12px;
+  margin: 2px 0 1rem 0;
+}
+.profile .spacer {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+.profile__details {
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.profile__details p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__details p span {
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */

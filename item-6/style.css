@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  background-color: #fff;
+}
+
+.blog-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  max-width: 90%;
+  margin: auto;
+  padding: 3rem 0;
+}
+@media (max-width: 600px) {
+  .blog-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+.box {
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.box-seo {
+  background: #051827;
+  color: #fff;
+  padding: 3rem 30px 1rem;
+  text-align: center;
+}
+.box__img {
+  height: 180px;
+  width: 100%;
+}
+.box__middle {
+  padding: 0.625rem 1.5rem;
+}
+.box__type {
+  font-size: 13px;
+  color: #738A94;
+}
+.box-seo .box__title {
+  font-size: 12px;
+  margin: 0;
+}
+.box__title {
+  font-size: 1rem;
+  line-height: 1.1;
+  margin: 8px 0;
+  text-transform: capitalize;
+}
+.box__title h2 {
+  font-weight: 400;
+  margin-top: 4px;
+  font-size: 1.375rem;
+}
+.box__title span {
+  font-size: 40px;
+  font-weight: 300;
+  color: #90a0cf;
+}
+.box__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+.box__item {
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 18px;
+}
+.box__item:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.box__more {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.box__desc {
+  font-size: 14px;
+  line-height: 20px;
+}
+.box__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 1.5rem;
+}
+.box__img-small {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box__img-small img {
+  max-width: 100%;
+}
+.box__upload-time {
+  color: #738A94;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer {
+  background: #051827;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

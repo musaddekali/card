@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-masterClass</title>
+    <link rel="stylesheet" href="fontawesome-free-web/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+            gap: 1rem;
+            padding: 10px;
+        }
+
+        .card {
+            position: relative;
+        }
+
+        .card__img {
+            height: 200px;
+            width: 100%;
+            background: -webkit-linear-gradient(-70deg, #db469f, #2188ff);
+        }
+
+        .card__body {
+            padding: 1rem;
+            transform: translateY(-80px);
+            z-index: 1;
+            background: #fff;
+            width: 80%;
+            box-shadow: 0 1px 5px 2px rgb(0 0 0 / 20%);
+            margin: auto;
+        }
+
+        .card__title {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: #444;
+            font-family: cursive;
+        }
+
+       .card p {
+            line-height: 28px;
+            margin-bottom: 1rem;
+        }
+
+        .card__cta {
+            padding: .5rem 20px;
+            background: green;
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: auto;
+            transition: 0.3s;
+        }
+        .card__cta:hover{
+            opacity: 0.7;
+        }
+
+        .card__links {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1rem 0;
+        }
+
+        .card__links a {
+            font-size: 1.2rem;
+            color: green;
+            transition: 0.3s;
+        }
+        .card__links a:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__body">
+                <h2 class="card__title">Graphic Design</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi explicabo quae cum accusantium quos
+                    impedit vel eius blanditiis, facere rem.
+                </p>
+                <a href="#" class="card__cta">Read More &RightArrow;</a>
+                <div class="card__links">
+                    <a href="#!"> <i class="fab fa-facebook"></i> </a>
+                    <a href="#!"> <i class="fab fa-instagram"></i></a>
+                    <a href="#!"> <i class="fab fa-twitter"></i></a>
+                    <a href="#!"> <i class="fab fa-linkedin"></i></a>
+                    <a href="#!"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__body">
+                <h2 class="card__title">Graphic Design</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi explicabo quae cum accusantium quos
+                    impedit vel eius blanditiis, facere rem.
+                </p>
+                <a href="#" class="card__cta">Read More &RightArrow;</a>
+                <div class="card__links">
+                    <a href="#!"> <i class="fab fa-facebook"></i> </a>
+                    <a href="#!"> <i class="fab fa-instagram"></i></a>
+                    <a href="#!"> <i class="fab fa-twitter"></i></a>
+                    <a href="#!"> <i class="fab fa-linkedin"></i></a>
+                    <a href="#!"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__body">
+                <h2 class="card__title">Graphic Design</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi explicabo quae cum accusantium quos
+                    impedit vel eius blanditiis, facere rem.
+                </p>
+                <a href="#" class="card__cta">Read More &RightArrow;</a>
+                <div class="card__links">
+                    <a href="#!"> <i class="fab fa-facebook"></i> </a>
+                    <a href="#!"> <i class="fab fa-instagram"></i></a>
+                    <a href="#!"> <i class="fab fa-twitter"></i></a>
+                    <a href="#!"> <i class="fab fa-linkedin"></i></a>
+                    <a href="#!"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__body">
+                <h2 class="card__title">Graphic Design</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi explicabo quae cum accusantium quos
+                    impedit vel eius blanditiis, facere rem.
+                </p>
+                <a href="#" class="card__cta">Read More &RightArrow;</a>
+                <div class="card__links">
+                    <a href="#!"> <i class="fab fa-facebook"></i> </a>
+                    <a href="#!"> <i class="fab fa-instagram"></i></a>
+                    <a href="#!"> <i class="fab fa-twitter"></i></a>
+                    <a href="#!"> <i class="fab fa-linkedin"></i></a>
+                    <a href="#!"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__img"></div>
+            <div class="card__body">
+                <h2 class="card__title">Graphic Design</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi explicabo quae cum accusantium quos
+                    impedit vel eius blanditiis, facere rem.
+                </p>
+                <a href="#" class="card__cta">Read More &RightArrow;</a>
+                <div class="card__links">
+                    <a href="#!"> <i class="fab fa-facebook"></i> </a>
+                    <a href="#!"> <i class="fab fa-instagram"></i></a>
+                    <a href="#!"> <i class="fab fa-twitter"></i></a>
+                    <a href="#!"> <i class="fab fa-linkedin"></i></a>
+                    <a href="#!"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
